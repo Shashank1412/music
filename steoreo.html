@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sonal's Favourite Music List</title>
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<audio id="music" preload="true">
+  <source src="assets/Gym Class Heroes Stereo Hearts ft Adam Levine OFFICIAL VIDEO.mp3">
+</audio>
+
+<div class="main1">
+  <div id="draggable1" class="ui-widget-content">
+
+    <div id="musicCont" class="flex-container settle" >
+      <div id="handle">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="artistNameAlbum">
+        <p>Stereo Hearts</p>
+      </div>
+      <div id="albumCont" class="flex-item album flex-container">
+        <img id="currentAlbum" class="flex-item" src="assets/1630607636806.jpg">
+      </div>
+      <div id="audioplayer">
+
+
+        <svg id="playButton" class="button" onclick="play()" x="0px" y="0px" width="4.5px" height="6.9px"
+          viewBox="0 0 4.5 6.9" style="enable-background:new 0 0 4.5 6.9;">
+          <polyline class="button" points="0.6,0.3 3.9,3.4 0.6,6.6 " />
+        </svg>
+
+
+        <svg id="pauseButton" class="button" onclick="pause()" x="0px" y="0px" width="4.5px" height="6.9px"
+          viewBox="0 0 4.5 6.9" style="enable-background:new 0 0 4.5 6.9;">
+          <g>
+            <line class="st0" x1="0.4" y1="0.1" x2="0.4" y2="6.8" />
+            <line class="st0" x1="4.1" y1="0.1" x2="4.1" y2="6.8" />
+          </g>
+        </svg>
+        <!-- <svg id="pauseButton" class="button" onclick="pause()" x="0px" y="0px" width="4.5px" height="6.9px"
+          viewBox="0 0 4.5 6.9" style="enable-background:new 0 0 4.5 6.9;">
+          <g>
+            <line class="st0" x1="0.4" y1="0.1" x2="0.4" y2="6.8" />
+            <line class="st0" x1="4.1" y1="0.1" x2="4.1" y2="6.8" />
+          </g>
+        </svg> -->
+        <img style="width: 8%;margin-top: 3%;margin-left: 3%;" src="https://img.icons8.com/ios/50/000000/circled-chevron-right.png" onclick="nxt1()"/>
+        <div id="timeline">
+          <div id="playhead"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sliderCont" class="flex-item">
+      <div id="slider">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bgText">
+  <h1>Hi Sonal,I just wanted you to know I LOVE YOU.So calm down and listen
+  <br>You can drag the player with the dots on click.<br></h1>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

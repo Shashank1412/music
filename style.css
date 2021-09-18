@@ -1,0 +1,193 @@
+html {
+  background-color: #272733;
+}
+
+.main {
+  margin-left: 60%;
+  margin-top: 2%;
+}
+
+.main1{
+  margin-left: 60%;
+  margin-top: 2%;
+}
+
+.album {
+  margin-bottom: 25px;
+}
+
+#musicCont {
+  background-color: #044154;
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #3594BA;
+}
+
+.lift {
+  animation: lift 350ms forwards;
+}
+
+@keyframes lift {
+  0% {
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+  100% {
+    box-shadow: 0px 25px 5px 9px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    transform: rotate(.5deg);
+  }
+}
+
+.settle {
+  animation: settle 200ms forwards;
+}
+
+@keyframes settle {
+  0% {
+    box-shadow: 0px 25px 5px 9px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    transform: rotate(.5deg);
+  }
+  100% {
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}
+
+.flex-container {
+  list-style: none;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding-bottom: 20px;
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#audioplayer {
+  width: 300px;
+  height: 60px;
+}
+
+.button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  outline: none;
+}
+
+#timeline {
+  width: 200px;
+  height: 2px;
+  margin-right: 10px;
+  margin-top: 20px;
+  float: right;
+  border-radius: 15px;
+  background: #DBE3E3;
+}
+
+#playhead {
+  width: 4px;
+  height: 10px;
+  margin-top: -4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#playButton,
+#pauseButton ,
+#nxtbutton{
+  width: 10px;
+  margin-top: 4px;
+  margin-left: 10px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation: bounce 500ms alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#artistNameAlbum {
+  display: inline-block;
+  position: absolute;
+  left: 140px;
+  padding: 10px;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.ui-widget-content {
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#handle {
+  position: absolute;
+  display: inline-block;
+  cursor: all-scroll;
+  left: 190px;
+  top: 415px;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #1D6B87;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  position: relative;
+  top: -438px;
+  left: 15%;
+  font-family: Helvetica;
+  color: rgba(29, 107, 135, .2)
+}
+
+.bgText{
+  width: 54%;
+  z-index: -2;
+  font-size: 22px;
+}
